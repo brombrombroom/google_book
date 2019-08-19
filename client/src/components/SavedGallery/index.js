@@ -6,7 +6,7 @@ import "./style.css"
 class SavedGallery extends Component {
     state = {
         items: [],
-        promiseIsResolved: false     
+        promiseIsResolved: false
     };
 
     deleteSaved(props) {
@@ -22,7 +22,7 @@ class SavedGallery extends Component {
     }
 
     render() {
-        let altImage = 'http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/256/Play-Books-icon.png';
+        let altImage = 'http://icons.iconarchive.com/icons/marcus-roberto/google-play/512/Google-Play-Books-icon.png';
         // Prevents page from loading until GET request is complete, preventing error
         if(!this.state.promiseIsResolved){return null}
         else{
@@ -31,7 +31,7 @@ class SavedGallery extends Component {
         <div className="col-sm-12">
                 <p className="search-status">Saved Items</p>
         </div>
-            {  
+            {
                 this.state.items.map((item, index) => {
                     let { authors, title, image, link, description, _id } = item;
                     let bookTitle = item.title;
@@ -56,9 +56,9 @@ class SavedGallery extends Component {
                                             className="book-image"
                                         />
                                     </div>
-                                    
+
                                 </a>
-                                <div className="description">                        
+                                <div className="description">
                                     <div><strong>Description:</strong></div>
                                     {description}</div>
                                 </div>

@@ -32,10 +32,10 @@ class Search extends Component{
             <Logo />
                 <FormGroup>
                     <InputGroup>
-                        <FormControl 
+                        <FormControl
                         type = "text"
                         placeholder = "Search for a book"
-                        onChange = { event => this.setState({query: event.target.value})} 
+                        onChange = { event => this.setState({query: event.target.value})}
                         onKeyPress = { event => {
                             if(event.key == "Enter"){
                                 this.search();
@@ -47,9 +47,9 @@ class Search extends Component{
                         </InputGroup.Addon>
                     </InputGroup>
                 </FormGroup>
-                <Gallery items = {this.state.items} 
-                    query = {this.state.lastQuery} 
-                    />   
+                <Gallery items = {this.state.items}
+                    query = {this.state.lastQuery}
+                    />
             </div>
         )
     }

@@ -13,7 +13,7 @@ class Gallery extends Component {
           })
     }
     render() {
-        let altImage = 'http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/256/Play-Books-icon.png';
+        let altImage = 'http://icons.iconarchive.com/icons/marcus-roberto/google-play/512/Google-Play-Books-icon.png';
         return (
 
             <div className="book-list-wrapper">
@@ -32,7 +32,7 @@ class Gallery extends Component {
                         return (
                             <div key={index} className="col-sm-12 col-md-4 col-lg-12 book-column">
                                 <div className="book-wrapper">
-                                <Save 
+                                <Save
                                         title={item.volumeInfo.title}
                                         authors={item.volumeInfo.authors}
                                         description={item.volumeInfo.description}
@@ -53,13 +53,13 @@ class Gallery extends Component {
                                                 className="book-image"
                                             />
                                         </div>
-                                        
+
                                     </a>
-                                    <div className="description">                        
+                                    <div className="description">
                                     <div><strong>Description:</strong></div>
                                     {description}</div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         )
